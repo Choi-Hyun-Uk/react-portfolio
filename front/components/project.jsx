@@ -29,7 +29,7 @@ const Project = ({ elRef }) => {
         <div className="project-list">
           <ul>
             <li>
-              <Link href="https://github.com/Choi-Hyun-Uk/react-blog">
+              <Link href="https://www.chudevlog.com">
                 <a>
                   <span className="thumb"></span>
                   <h2>리액트로 만든 SNS형식 블로그</h2>

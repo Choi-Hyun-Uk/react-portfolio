@@ -255,6 +255,12 @@ export const ProjectWrapper = styled.div`
                         margin-bottom: 2rem;
                         overflow: hidden;
                         border-radius: 0.5rem;
+                        & img {
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
                     }
                     & h2 {
                         font-weight: bold;

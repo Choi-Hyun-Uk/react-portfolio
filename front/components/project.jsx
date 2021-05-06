@@ -31,7 +31,12 @@ const Project = ({ elRef }) => {
             <li>
               <Link href="https://www.chudevlog.com">
                 <a>
-                  <span className="thumb"></span>
+                  <span className="thumb">
+                    <img
+                      src="https://react-blog-s3.s3.ap-northeast-2.amazonaws.com/original/reactblog-thumnail.jpeg"
+                      alt="project-thumbnail"
+                    />
+                  </span>
                   <h2>리액트로 만든 SNS형식 블로그</h2>
                   <p>Front는 리액트로 작업하였으며, Back 노드와 익스프레스로 작업하였습니다.</p>
                 </a>

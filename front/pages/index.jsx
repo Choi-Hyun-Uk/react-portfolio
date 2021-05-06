@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Header from '../components/header';
 import Main from '../components/main';
 import Skill from '../components/skill';
@@ -7,12 +7,14 @@ import Contact from '../components/contact';
 import Footer from '../components/footer';
 
 const Home = () => {
+  const elRef = useRef();
+
   return (
     <>
-      <Header />
+      <Header top={elRef} />
       <Main />
       <Skill />
-      <Project />
+      <Project elRef={elRef} />
       <Contact />
       <Footer />
     </>

@@ -4,13 +4,13 @@ import { AiFillGithub } from 'react-icons/ai';
 
 import { ProjectWrapper } from './styles';
 
-const Project = () => {
+const Project = ({ elRef }) => {
   const [fadeIn, setFadeIn] = useState(false);
-  const divRef = useRef();
+  const el = useRef((node) => node.current);
 
   useEffect(() => {
     const scroll = () => {
-      if (window.scrollY >= divRef.current.offsetTop * 0.6) {
+      if (window.scrollY >= elRef.current.offsetTop * 0.6) {
         setFadeIn(true);
       }
     };
@@ -18,10 +18,12 @@ const Project = () => {
     return () => {
       window.removeEventListener('scroll', scroll);
     };
-  }, [setFadeIn, divRef]);
+  }, [setFadeIn]);
+
+  console.log(el);
 
   return (
-    <ProjectWrapper ref={divRef} className={fadeIn && 'fadeIn'}>
+    <ProjectWrapper ref={elRef} className={fadeIn && 'fadeIn'}>
       <div className="inner">
         <h1>PROJECT</h1>
         <div className="project-list">

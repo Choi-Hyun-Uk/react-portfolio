@@ -1,9 +1,9 @@
 import React, { useEffect, useState, useCallback } from 'react';
-
-import { HeaderWrapper } from './styles';
 import Link from 'next/link';
 
-const Header = () => {
+import { HeaderWrapper } from './styles';
+
+const Header = ({ top }) => {
   const [hide, setHide] = useState(false);
   const [pageY, setPageY] = useState(0);
 
@@ -12,7 +12,7 @@ const Header = () => {
   }, []);
 
   const onClickProject = useCallback(() => {
-    window.scrollTo(0, 1740 * 0.8);
+    window.scrollTo(0, top.current.offsetTop * 0.9);
   }, []);
 
   const onClickContact = useCallback(() => {

@@ -393,5 +393,9 @@ export const ContactWrapper = styled.div`
 export const FooterWrapper = styled.div`
     text-align: center;
     padding: 1.25rem 0;
-    border-top: 1px solid #ced4da;   
+    border-top: 1px solid #ced4da;
+    & div {
+        padding: 0 1rem;
+        line-height: 1.5;
+    }   
 `

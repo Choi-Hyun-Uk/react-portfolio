@@ -12,6 +12,7 @@
   "dependencies": {
     "@emotion/react": "^11.1.5",
     "@emotion/styled": "^11.3.0",
+    "@next/bundle-analyzer": "^10.2.0",
     "@reduxjs/toolkit": "^1.5.1",
     "next": "^10.2.0",
     "next-redux-wrapper": "^6.0.2",

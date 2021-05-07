@@ -29,7 +29,7 @@ const Project = ({ elRef }) => {
         <div className="project-list">
           <ul>
             <li>
-              <Link href="https://www.chudevlog.com">
+              <Link href="https://chudevlog.com">
                 <a>
                   <span className="thumb">
                     <img
@@ -47,7 +47,7 @@ const Project = ({ elRef }) => {
                     <AiFillGithub className="github-icon" />
                   </a>
                 </Link>
-                <Link href="https://www.chudevlog.com">
+                <Link href="https://chudevlog.com">
                   <a className="site">
                     <span>홈페이지 이동</span>
                   </a>

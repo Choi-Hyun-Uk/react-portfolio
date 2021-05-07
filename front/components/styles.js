@@ -246,6 +246,10 @@ export const ProjectWrapper = styled.div`
                 @media only screen and (max-width: 600px) {
                     width: 100%;
                     padding: 0;
+                    &:hover {
+                        box-shadow: 0;
+                        border-radius: 0;
+                    }
                 }
                 & > a {
                     & .thumb {

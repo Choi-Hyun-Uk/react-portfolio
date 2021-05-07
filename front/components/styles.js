@@ -111,6 +111,10 @@ export const MainWrapper = styled.div`
                 font-weight: bold;
                 font-size: 4rem;
                 margin-bottom: 2rem;
+                @media screen and (max-width: 600px){
+                    font-size: 3rem;
+                    margin-bottom: 1.5rem;
+                }
             }
             & h2 {
                 color: #ced4da;
@@ -118,6 +122,10 @@ export const MainWrapper = styled.div`
                 margin-bottom: 4rem;
                 word-break: keep-all;
                 line-height: 1.2;
+                @media screen and (max-width: 600px){
+                    font-size: 3rem;
+                    margin-bottom: 3rem;
+                }
                 & strong {
                     font-weight: bold;
                     color: #212529;

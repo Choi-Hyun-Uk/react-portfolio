@@ -247,17 +247,15 @@ export const ProjectWrapper = styled.div`
                 padding: 1rem;
                 box-sizing: border-box;
                 transition-duration: 0.2s;
-                &:hover {
-                    box-shadow: 3px 3px 15px rgb(0 0 0 / 10%);
-                    border-radius: 0.5rem;
+                @media screen and (min-width: 600px) {
+                    &:hover {
+                        box-shadow: 3px 3px 15px rgb(0 0 0 / 10%);
+                        border-radius: 0.5rem;
+                    }
                 }
                 @media only screen and (max-width: 600px) {
                     width: 100%;
                     padding: 0;
-                    &:hover {
-                        box-shadow: 0;
-                        border-radius: 0;
-                    }
                 }
                 & > a {
                     & .thumb {

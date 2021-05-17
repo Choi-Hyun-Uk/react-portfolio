@@ -97,12 +97,13 @@ export const HeaderWrapper = styled.div`
 
 export const MainWrapper = styled.div`
     margin: 6rem 0;
+    padding: 0 1rem;
 
     & .inner {
         position: relative;
         max-width: 1000px;
         margin: 0 auto;
-        padding: 0 1rem 6rem 1rem;
+        padding-bottom: 6rem;
         border-bottom: 2px solid #fa5252;
 
         & .intro-title {
@@ -134,27 +135,71 @@ export const MainWrapper = styled.div`
         }
 
         & .intro-content {
-            & > p {
-                font-size: 1rem;
-                margin-bottom: 2rem;
-                line-height: 1.5;
-                &:last-of-type {
-                    margin-bottom: 0;
-                }
+            & h1 {
+                font-weight: 700;
+                font-size: 1.25rem;
+                color: #212529;
+                padding-bottom: 2rem;
+                border-bottom: 2px solid #212529;
             }
         }
     }
-
 `;
+
+export const ListItem = styled.li`
+    cursor: pointer;
+    
+    & h2 {
+        position: relative;
+        line-height: calc(4rem - 1px);
+        border-bottom: 1px solid #dee2e6;
+    }
+    &.active > h2 {
+        color: #748ffc;
+    }
+    &.active > p {
+        padding: 1.5rem;
+        height: auto;
+        border-bottom: 1px solid #dee2e6;
+        word-break: keep-all;
+    }
+    &.active svg {
+        transform: translateY(-50%) rotate(180deg);
+    }
+    & p {
+        display: block;
+        width: 100%;
+        height: 0px;
+        padding: 0 1.5rem;
+        overflow: hidden;
+        box-sizing: border-box;
+        font-size: 0.875rem;
+        margin-bottom: 2rem;
+        line-height: 1.75rem;
+        background-color: #f5f5f5;
+        transition: all 0.2s;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    & svg {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1rem;
+        right: 1rem;
+    }
+`
 
 export const SkillWrapper = styled.div`
     margin-bottom: 6rem;
+    padding: 0 1rem;
 
     & .inner {
         position: relative;
         max-width: 1000px;
         margin: 0 auto;
-        padding: 0 1rem 5rem 1rem;
+        padding-bottom: 5rem;
         border-bottom: 2px solid #20c997;
 
         & h1 {
@@ -209,7 +254,7 @@ export const SkillWrapper = styled.div`
 `
 
 export const ProjectWrapper = styled.div`
-    padding-top: 10rem;
+    padding: 10rem 1rem 0 1rem;
     margin-bottom: 6rem;
     opacity: 0;
     transition-duration: 0.5s;
@@ -223,7 +268,7 @@ export const ProjectWrapper = styled.div`
         position: relative;
         max-width: 1000px;
         margin: 0 auto;
-        padding: 0 1rem 6rem 1rem;
+        padding-bottom: 6rem;
         border-bottom: 2px solid #748ffc;
 
         & h1 {

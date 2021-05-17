@@ -6,7 +6,6 @@ import { ProjectWrapper } from './styles';
 
 const Project = ({ elRef }) => {
   const [fadeIn, setFadeIn] = useState(false);
-  const el = useRef((node) => node.current);
 
   useEffect(() => {
     const scroll = () => {
@@ -19,8 +18,6 @@ const Project = ({ elRef }) => {
       window.removeEventListener('scroll', scroll);
     };
   }, [setFadeIn]);
-
-  console.log(el);
 
   return (
     <ProjectWrapper ref={elRef} className={fadeIn && 'fadeIn'}>
@@ -37,7 +34,7 @@ const Project = ({ elRef }) => {
                       alt="project-thumbnail"
                     />
                   </span>
-                  <h2>리액트로 만든 SNS형식 블로그</h2>
+                  <h2>리액트로 만든 블로그</h2>
                   <p>Front는 리액트로 작업하였으며, Back 노드와 익스프레스로 작업하였습니다.</p>
                 </a>
               </Link>

@@ -231,20 +231,56 @@ export const SkillWrapper = styled.div`
                         margin-left: 0;
                     }
                     & li {
-                        width: 33.333333%;
+                        display: flex;
+                        flex-direction: row;
+                        width: 100%;
                         padding: 1rem;
                         box-sizing: border-box;
                         @media only screen and (max-width: 600px) {
                             width: 50%;
                         }
                         & span {
-                            display: block;
-                            font-size: 1.25rem;
-                            padding: 2rem 0;
-                            text-align: center;
-                            background-color: white;
-                            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-                            border-radius: 0.5rem;
+                            width: 120px;
+                            font-size: 0.875rem;
+                            line-height: 1.75rem;
+                        }
+                        & .percent {
+                            position: relative;
+                            width: 100%;
+                            height: 1.75rem;
+                            background: #e9ecef;
+                            border-radius: 0.25rem;
+                            & div {
+                                position: absolute;
+                                height: 100%;
+                                font-size: 0.875rem;
+                                line-height: 1.75rem;
+                                padding: 0 0.5rem;
+                                text-align: right;
+                                border-radius: 0.25rem;
+                                color: #ffffff;
+                                overflow: hidden;
+                            }
+                            & .p-70 {
+                                width: 70%;
+                                background-color: #fa5252;
+                            }
+                            & .p-60 {
+                                width: 60%;
+                                background-color: #20c997;
+                            }
+                            & .p-50 {
+                                width: 50%;
+                                background-color: #748ffc;
+                            }
+                            & .p-40 {
+                                width: 40%;
+                                background-color: #748ffc;
+                            }
+                            & .p-30 {
+                                width: 30%;
+                                background-color: #748ffc;
+                            }
                         }
                     }
                 }

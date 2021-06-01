@@ -221,69 +221,62 @@ export const SkillWrapper = styled.div`
                     margin-bottom: 0.5rem;
                     padding-bottom: 0.5rem;
                 }
-                & ul {
-                    display: flex;
-                    max-width: calc(1000px + 2rem);
-                    margin-left: -1rem;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    @media only screen and (max-width: 600px) {
-                        margin-left: 0;
-                    }
-                    & li {
-                        display: flex;
-                        flex-direction: row;
-                        width: 100%;
-                        padding: 1rem;
-                        box-sizing: border-box;
-                        @media only screen and (max-width: 600px) {
-                            width: 50%;
-                        }
-                        & span {
-                            width: 120px;
-                            font-size: 0.875rem;
-                            line-height: 1.75rem;
-                        }
-                        & .percent {
-                            position: relative;
-                            width: 100%;
-                            height: 1.75rem;
-                            background: #e9ecef;
-                            border-radius: 0.25rem;
-                            & div {
-                                position: absolute;
-                                height: 100%;
-                                font-size: 0.875rem;
-                                line-height: 1.75rem;
-                                padding: 0 0.5rem;
-                                text-align: right;
-                                border-radius: 0.25rem;
-                                color: #ffffff;
-                                overflow: hidden;
-                            }
-                            & .p-70 {
-                                width: 70%;
-                                background-color: #fa5252;
-                            }
-                            & .p-60 {
-                                width: 60%;
-                                background-color: #20c997;
-                            }
-                            & .p-50 {
-                                width: 50%;
-                                background-color: #748ffc;
-                            }
-                            & .p-40 {
-                                width: 40%;
-                                background-color: #748ffc;
-                            }
-                            & .p-30 {
-                                width: 30%;
-                                background-color: #748ffc;
-                            }
-                        }
-                    }
-                }
+            }
+        }
+    }
+`
+
+export const SkillList = styled.ul`
+    display: flex;
+    max-width: calc(1000px + 2rem);
+    margin-left: -1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @media only screen and (max-width: 600px) {
+        margin-left: 0;
+    }
+    & li {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+        @media only screen and (max-width: 600px) {
+            width: 50%;
+        }
+        & span {
+            width: 120px;
+            font-size: 0.875rem;
+            line-height: 1.75rem;
+        }
+        & .percent {
+            position: relative;
+            width: 100%;
+            height: 1.75rem;
+            background: #e9ecef;
+            border-radius: 0.25rem;
+            & div {
+                position: absolute;
+                height: 100%;
+                font-size: 0.875rem;
+                line-height: 1.75rem;
+                padding: 0 0.5rem;
+                text-align: right;
+                border-radius: 0.25rem;
+                color: #ffffff;
+                overflow: hidden;
+            }
+            & .p-80 {
+                width: 80%;
+                background-color: #fa5252;
+            }
+            & .p-70 {
+                width: 70%;
+                background-color: #748ffc;
+            }
+            & .p-60 {
+                width: 60%;
+                background-color: #20c997;
             }
         }
     }

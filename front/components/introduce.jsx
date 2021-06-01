@@ -10,8 +10,8 @@ const Introduce = ({ title, content }) => {
 
   return (
     <ul className="list-wrapper">
-      <ListItem onClick={(e) => onClickHeight(e.currentTarget)} className={done ? 'active' : ''}>
-        <h2>
+      <ListItem className={done ? 'active' : ''}>
+        <h2 onClick={(e) => onClickHeight(e.currentTarget)}>
           {title}
           <MdKeyboardArrowDown />
         </h2>

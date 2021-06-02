@@ -8,7 +8,6 @@ const Skill = () => {
         <h1>SKILL</h1>
         <div>
           <div className="front">
-            <h2>Front End</h2>
             <SkillList>
               <li>
                 <span>HTML</span>

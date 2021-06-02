@@ -242,7 +242,7 @@ export const SkillList = styled.ul`
         padding: 1rem;
         box-sizing: border-box;
         @media only screen and (max-width: 600px) {
-            width: 50%;
+            padding: 1rem 0;
         }
         & span {
             width: 120px;
@@ -251,7 +251,7 @@ export const SkillList = styled.ul`
         }
         & .percent {
             position: relative;
-            width: 100%;
+            flex: 1;
             height: 1.75rem;
             background: #e9ecef;
             border-radius: 0.25rem;

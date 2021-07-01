@@ -28,6 +28,12 @@ const Skill = () => {
                 </div>
               </li>
               <li>
+                <span>Typescript</span>
+                <div className="percent">
+                  <div className="p-50">50%</div>
+                </div>
+              </li>
+              <li>
                 <span>React JS</span>
                 <div className="percent">
                   <div className="p-80">80%</div>

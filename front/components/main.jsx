@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 
 import { MainWrapper } from './styles';
 import Introduce from './introduce';
@@ -62,9 +62,11 @@ const Main = () => {
         </div>
         <div className="intro-content">
           <h1>자신을 소개해주세요!</h1>
-          {intro.map((item) => (
-            <Introduce key={item.id} title={item.title} content={item.content} />
-          ))}
+          <ul className="list-wrapper">
+            {intro.map((item) => (
+              <Introduce key={item.id} title={item.title} content={item.content} />
+            ))}
+          </ul>
         </div>
       </div>
     </MainWrapper>

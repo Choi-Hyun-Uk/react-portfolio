@@ -30,7 +30,7 @@ const Skill = () => {
               <li>
                 <span>Typescript</span>
                 <div className="percent">
-                  <div className="p-50">50%</div>
+                  <div className="p-60">60%</div>
                 </div>
               </li>
               <li>

@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export const HeaderWrapper = styled.div`
     position: fixed;
@@ -493,4 +493,129 @@ export const FooterWrapper = styled.div`
         padding: 0 1rem;
         line-height: 1.5;
     }   
+`
+
+export const PromotionItemWrap = styled.li`
+    & .thumbnail {
+        cursor: pointer;
+        height: 280px;
+        overflow: hidden;
+        margin-bottom: 1rem;
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    & .title {
+        font-size: 0.875rem;
+        color: #999999;
+        border-bottom: 1px solid #cccccc;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    & .other {
+        display: flex;
+        & p {
+            &:first-of-type {
+                padding-right: 0.5rem;
+                margin-right: 0.5rem;
+                border-right: 2px solid #cccccc;
+            }
+            font-size: 0.875rem;
+            color: #999999;
+        }
+    }
+`
+
+export const ImageModalWrap = styled.div`
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999999;
+    overflow-y: scroll;
+    &::after {
+        content: "";
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+`
+
+export const ImageModalContent = styled.div`
+    position: relative;
+    width: 76%;
+    margin: 2rem auto;
+    z-index: 2;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+
+    & .head {
+        margin-bottom: 2rem;
+        & > h3 {
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        & > h4 {
+            margin-top: 1rem;
+            color: #999999;
+            font-size: 0.875rem;
+        }
+        & > div {
+            display: flex;
+            & > p {
+                padding-right: 0.5rem;
+                margin-right: 0.5rem;
+                border-right: 2px solid #cccccc;
+                font-size: 0.875rem;
+                color: #999999;
+                &:last-of-type {
+                    margin: 0;
+                    padding: 0;
+                    border: none;
+                }
+            }
+        }
+    }
+    & .image-box {
+        margin-bottom: 2rem;
+        & img {
+            width: 100%;
+            vertical-align: bottom;
+        }
+    }
+    & .image-source {
+        h3 {
+            font-weight: 700;
+        }
+        & > div {
+            text-align: center;
+            margin-bottom: 1rem;
+            img {
+                width: 50%;
+                vertical-align: bottom;
+            }
+        }
+    }
+    & .close-btn {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        background: white;
+        cursor: pointer;
+        & svg {
+            font-size: 2rem;
+        }
+    }
 `

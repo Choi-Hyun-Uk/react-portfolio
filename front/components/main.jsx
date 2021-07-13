@@ -57,7 +57,7 @@ const Main = () => {
         <div className="intro-title">
           <h1>안녕하세요.</h1>
           <h2>
-            <strong>웹 프론트엔드</strong>를 목표로 하고 있는 <strong>최현욱</strong> 입니다.
+            <strong>웹 디자이너</strong><br /><strong>최현욱</strong> 입니다.
           </h2>
         </div>
         <div className="intro-content">

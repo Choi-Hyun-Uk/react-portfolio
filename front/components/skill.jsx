@@ -10,6 +10,18 @@ const Skill = () => {
           <div className="front">
             <SkillList>
               <li>
+                <span>Illustrator</span>
+                <div className="percent">
+                  <div className="p-80">80%</div>
+                </div>
+              </li>
+              <li>
+                <span>Photoshop</span>
+                <div className="percent">
+                  <div className="p-70">70%</div>
+                </div>
+              </li>
+              <li>
                 <span>HTML</span>
                 <div className="percent">
                   <div className="p-80">80%</div>
@@ -27,7 +39,7 @@ const Skill = () => {
                   <div className="p-70">70%</div>
                 </div>
               </li>
-              <li>
+              {/* <li>
                 <span>Typescript</span>
                 <div className="percent">
                   <div className="p-60">60%</div>
@@ -68,7 +80,7 @@ const Skill = () => {
                 <div className="percent">
                   <div className="p-60">60%</div>
                 </div>
-              </li>
+              </li> */}
             </SkillList>
           </div>
         </div>

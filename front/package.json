@@ -12,8 +12,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@emotion/react": "^11.1.5",
-    "@emotion/styled": "^11.3.0",
     "@next/bundle-analyzer": "^10.2.0",
     "cross-env": "^7.0.3",
     "next": "^10.2.0",

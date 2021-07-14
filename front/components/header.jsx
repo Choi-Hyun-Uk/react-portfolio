@@ -12,7 +12,7 @@ const Header = ({ top }) => {
   }, []);
 
   const onClickProject = useCallback(() => {
-    window.scrollTo(0, top.current.offsetTop * 0.9);
+    window.scrollTo(0, top.current.offsetTop * 0.3);
   }, []);
 
   const onClickContact = useCallback(() => {

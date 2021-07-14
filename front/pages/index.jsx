@@ -6,6 +6,7 @@ import Contact from '../components/contact';
 import Footer from '../components/footer';
 import Main from '../components/main';
 import Promotion from '../components/promotion';
+import ProductDetail from '../components/productDetail';
 
 const Home = () => {
   const elRef = useRef();
@@ -15,7 +16,8 @@ const Home = () => {
       <Header top={elRef} />
       <Main />
       <Skill />
-      <Promotion elRef={elRef} />
+      <Promotion promotionRef={elRef} />
+      <ProductDetail productRef={elRef} />
       <Contact />
       <Footer />
     </>

@@ -2,7 +2,7 @@ import React, { useCallback, useState } from 'react';
 import { PromotionItemWrap } from './styles';
 import ImageModal from './imageModal';
 
-const PromotionItem = ({ post }) => {
+const PromotionItem = ({ promotion }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     const onClickImage = useCallback(() => {
@@ -13,15 +13,15 @@ const PromotionItem = ({ post }) => {
         <>
             <PromotionItemWrap onClick={onClickImage}>
                 <div className="thumbnail">
-                    <img src={post.pcImage[0].src} alt={post.title} />
+                    <img src={promotion.pcImage[0].src} alt={promotion.title} />
                 </div>
-                <p className="title">{post.title}</p>
+                <p className="title">{promotion.title}</p>
                 <div className="other">
-                    <p>{post.created_at}</p>
-                    <p>{post.category}</p>
+                    <p>{promotion.created_at}</p>
+                    <p>{promotion.category}</p>
                 </div>
             </PromotionItemWrap>
-            <ImageModal item={post} isOpen={isOpen} onClickImage={onClickImage}/>
+            <ImageModal item={promotion} isOpen={isOpen} onClickImage={onClickImage}/>
         </>
     )
 }

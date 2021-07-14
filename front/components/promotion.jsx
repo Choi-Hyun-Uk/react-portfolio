@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { ProjectWrapper } from './styles';
 import PromotionItem from './promotionItem';
 
-const post = [
+const promotion = [
   {
     id: 1,
     title: '2021 설날 이벤트 프로모션 상세페이지',
@@ -159,12 +159,12 @@ const post = [
   },
 ];
 
-const Promotion = ({ elRef }) => {
+const Promotion = ({ promotionRef }) => {
   const [fadeIn, setFadeIn] = useState(false);
 
   useEffect(() => {
     const scroll = () => {
-      if (window.scrollY >= elRef.current.offsetTop * 0.6) {
+      if (window.scrollY >= promotionRef.current.offsetTop * 0.2) {
         setFadeIn(true);
       }
     };
@@ -176,13 +176,13 @@ const Promotion = ({ elRef }) => {
 
   return (
     <>
-      <ProjectWrapper ref={elRef} className={fadeIn && 'fadeIn'}>
+      <ProjectWrapper ref={promotionRef} className={fadeIn && 'fadeIn'}>
         <div className="inner">
-          <h1>PROJECT</h1>
+          <h1>이벤트 프로모션 페이지</h1>
           <div className="project-list">
             <ul>
-              { post.map((item) => (
-                  <PromotionItem key={item.id} post={item} />
+              { promotion.map((item) => (
+                  <PromotionItem key={item.id} promotion={item} />
               ))}
             </ul>
           </div>

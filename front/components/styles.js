@@ -308,6 +308,12 @@ export const ProjectWrapper = styled.div`
             font-weight: bold;
             font-size: 2rem;
             margin-bottom: 4rem;
+            & > p {
+                margin-top: 1rem;
+                font-size: 0.875rem;
+                font-weight: 400;
+                color: #999999;
+            }
         }
 
         & ul {
@@ -365,43 +371,6 @@ export const ProjectWrapper = styled.div`
                 }
             }
         }
-
-        /* .link-box {
-            display: flex;
-            height: 2rem;
-            flex-direction: row;
-            justify-content: flex-end;
-            align-items: center;
-
-            & a, & svg{
-                transition-duration: 0.2s;
-            }
-
-            & .github-icon {
-                font-size: 2rem;
-                margin-right: 1rem;
-                &:hover {
-                    color: #f14e32;
-                }
-            }
-            & .site {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-size: 0.875rem;
-                height: 100%;
-                padding: 0 1rem;
-                border: 1px solid #adb5bd;
-                border-radius: 1rem;
-                &:hover {
-                    background-color: #748ffc;
-                    border: 1px solid #748ffc;
-                    & span {
-                        color: white;
-                    }
-                }
-            }
-        } */
     }
 `
 
@@ -535,6 +504,27 @@ export const PromotionItemWrap = styled.li`
             }
             font-size: 0.875rem;
             color: #999999;
+        }
+    }
+
+    & .participation {
+        display: flex;
+        font-size: 0.875rem;
+        margin-top: 1rem;
+        color: #999999;
+        & span {
+            display: inline-block;
+            margin-right: 5px;
+        }
+        & p {
+            padding-right: 0.5rem;
+            margin-right: 0.5rem;
+            border-right: 2px solid #cccccc;
+            &:last-of-type {
+                padding-right: 0;
+                margin-right: 0;
+                border-right: none;
+            }
         }
     }
 `

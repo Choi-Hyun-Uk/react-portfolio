@@ -7,7 +7,7 @@ import Introduce from './introduce';
 const intro = [
   {
     id: 1,
-    title: '소통과 협업을 중요시하는 이유는?',
+    title: '소통과 협업을 중요시하는 이유?',
     content: [
       `실무에서 업무를 진행할 때에는 혼자하는 업무는 거의 없을 것 같습니다.
       팀 내부 혹은 다른 팀과 함께 일을 진행할 경우가 많습니다.`,
@@ -48,6 +48,7 @@ const Main = () => {
           </div>
         </div>
         <div className="intro-content">
+          <h1>질문답변</h1>
           <ul className="list-wrapper">
             {intro.map((item) => (
               <Introduce key={item.id} title={item.title} content={item.content} />

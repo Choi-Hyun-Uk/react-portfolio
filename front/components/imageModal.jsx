@@ -32,7 +32,10 @@ const ImageModal = ({ item, isOpen, onClickImage }) => {
                         {item.participation.map((text, index) => <p key={index}>{text}</p>)}
                     </div>
                     <h4>브랜드 : {item.brand}</h4>
-                    {item.url && <div className="link-box">URL : <a href={item.url} target="_blank">링크</a></div>}
+                    {item.url
+                        ? <div className="link-box">URL : <a href={item.url} target="_blank">링크</a></div>
+                        : <div className="link-box-none">현재 링크가 닫혀 있습니다.</div>
+                    }
                 </div>
                 <div className="image-box pc-version">
                     <h3>PC 버전</h3>

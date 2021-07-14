@@ -666,6 +666,11 @@ export const ImageModalContent = styled.div`
             margin-left: 5px;
         }
     }
+    & .link-box-none {
+        font-size: 0.875rem;
+        margin-top: 1rem;
+        color: #999999;
+    }
     & .close-btn {
         position: absolute;
         top: 2rem;

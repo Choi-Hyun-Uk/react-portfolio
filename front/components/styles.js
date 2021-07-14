@@ -7,7 +7,6 @@ export const HeaderWrapper = styled.div`
     height: 6rem;
     z-index: 99999;
     transition-duration: 0.3s;
-
     &::before {
         content: "";
         display: block;
@@ -18,11 +17,9 @@ export const HeaderWrapper = styled.div`
         background-color: white;
         opacity: 0.8;
     }
-
     &.hide {
         top: -100%;
     }
-
     & .inner {
         position: relative;
         display: flex;
@@ -37,7 +34,6 @@ export const HeaderWrapper = styled.div`
         & div {
             font-size: 1.25rem;
         }
-
         & .name-logo {
             position: relative;
             display: flex;
@@ -60,7 +56,6 @@ export const HeaderWrapper = styled.div`
                 background-color: #748ffc;
             }
         }
-
         & ul {
             display: flex;
             flex-direction: row;
@@ -98,7 +93,6 @@ export const HeaderWrapper = styled.div`
 export const MainWrapper = styled.div`
     margin: 6rem 0;
     padding: 0 1rem;
-
     & .inner {
         position: relative;
         max-width: 1000px;
@@ -108,6 +102,7 @@ export const MainWrapper = styled.div`
 
         & .intro-title {
             padding-top: 4rem;
+            margin-bottom: 4rem;
             & h1 {
                 font-weight: bold;
                 font-size: 4rem;
@@ -118,22 +113,25 @@ export const MainWrapper = styled.div`
                 }
             }
             & h2 {
+                align-items: center;
                 color: #ced4da;
                 font-size: 4rem;
-                margin-bottom: 4rem;
                 word-break: keep-all;
                 line-height: 1.2;
+                margin-bottom: 1rem;
                 @media screen and (max-width: 600px){
                     font-size: 3rem;
-                    margin-bottom: 3rem;
                 }
                 & strong {
                     font-weight: bold;
                     color: #212529;
                 }
+                & svg {
+                    vertical-align: -5px;
+                    color: #748ffc;
+                }
             }
         }
-
         & .intro-content {
             & h1 {
                 font-weight: 700;
@@ -148,7 +146,6 @@ export const MainWrapper = styled.div`
 
 export const ListItem = styled.li`
     cursor: pointer;
-    
     & h2 {
         position: relative;
         line-height: calc(4rem - 1px);
@@ -157,7 +154,7 @@ export const ListItem = styled.li`
     &.active > h2 {
         color: #748ffc;
     }
-    &.active > p {
+    &.active > .content-box {
         padding: 1.5rem;
         height: auto;
         border-bottom: 1px solid #dee2e6;
@@ -166,7 +163,7 @@ export const ListItem = styled.li`
     &.active svg {
         transform: translateY(-50%) rotate(180deg);
     }
-    & p {
+    & .content-box {
         display: block;
         width: 100%;
         height: 0px;
@@ -175,11 +172,14 @@ export const ListItem = styled.li`
         box-sizing: border-box;
         font-size: 0.875rem;
         margin-bottom: 2rem;
-        line-height: 1.75rem;
         background-color: #f5f5f5;
         transition: all 0.2s;
         &:last-of-type {
             margin-bottom: 0;
+        }
+        & p {
+            line-height: 1.5;
+            margin-bottom: 0.5rem;
         }
     }
     & svg {
@@ -266,17 +266,21 @@ export const SkillList = styled.ul`
                 color: #ffffff;
                 overflow: hidden;
             }
+            & .p-90 {
+                width: 90%;
+                background: linear-gradient(to right, #748ffc, #fa5252);
+            }
             & .p-80 {
                 width: 80%;
-                background-color: #fa5252;
+                background: linear-gradient(to right, #20c997, #fa5252);
             }
             & .p-70 {
                 width: 70%;
-                background-color: #748ffc;
+                background: linear-gradient(to right, #20c997, #748ffc);
             }
             & .p-60 {
                 width: 60%;
-                background-color: #20c997;
+                background: linear-gradient(to right, #748ffc, #20c997);
             }
         }
     }
@@ -297,7 +301,7 @@ export const ProjectWrapper = styled.div`
         position: relative;
         max-width: 1000px;
         margin: 0 auto;
-        padding-bottom: 6rem;
+        padding-bottom: 4rem;
         border-bottom: 2px solid #748ffc;
 
         & h1 {
@@ -319,12 +323,14 @@ export const ProjectWrapper = styled.div`
             & li {
                 width: 50%;
                 padding: 1rem;
+                margin-bottom: 2rem;
                 box-sizing: border-box;
                 transition-duration: 0.2s;
                 @media screen and (min-width: 600px) {
                     &:hover {
-                        box-shadow: 3px 3px 15px rgb(0 0 0 / 10%);
+                        box-shadow: 0px 3px 10px rgb(0 0 0 / 10%);
                         border-radius: 0.5rem;
+                        transform: translateY(-1rem);
                     }
                 }
                 @media only screen and (max-width: 600px) {
@@ -360,7 +366,7 @@ export const ProjectWrapper = styled.div`
             }
         }
 
-        .link-box {
+        /* .link-box {
             display: flex;
             height: 2rem;
             flex-direction: row;
@@ -395,7 +401,7 @@ export const ProjectWrapper = styled.div`
                     }
                 }
             }
-        }
+        } */
     }
 `
 
@@ -496,6 +502,9 @@ export const FooterWrapper = styled.div`
 `
 
 export const PromotionItemWrap = styled.li`
+    @media screen and (max-width: 600px){
+        margin-bottom: 3rem;
+    }
     & .thumbnail {
         cursor: pointer;
         height: 280px;
@@ -552,7 +561,7 @@ export const ImageModalWrap = styled.div`
 
 export const ImageModalContent = styled.div`
     position: relative;
-    width: 76%;
+    width: 80%;
     margin: 2rem auto;
     z-index: 2;
     background-color: white;
@@ -560,6 +569,10 @@ export const ImageModalContent = styled.div`
     padding: 2rem;
     border-radius: 0.5rem;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+    @media screen and (max-width: 600px){
+        width: 100%;
+        padding: 2rem 1rem;
+    }
 
     & .head {
         margin-bottom: 2rem;
@@ -571,6 +584,14 @@ export const ImageModalContent = styled.div`
             margin-top: 1rem;
             color: #999999;
             font-size: 0.875rem;
+        }
+        & .participation {
+            font-size: 0.875rem;
+            margin-top: 1rem;
+            color: #999999;
+            & span {
+                margin-right: 5px;
+            }
         }
         & > div {
             display: flex;
@@ -585,27 +606,64 @@ export const ImageModalContent = styled.div`
                     padding: 0;
                     border: none;
                 }
+                @media screen and (max-width: 600px){
+                    margin-bottom: 0.5rem;
+                    padding: 0;
+                    border: none;
+                }
             }
         }
     }
-    & .image-box {
+    & .image-box { /* 이미지 박스 공통 */
         margin-bottom: 2rem;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid #cccccc;
+        text-align: center;
+        & h3 {
+            display: inline-block;
+            padding: 0.875rem 2rem;
+            background-color: #748ffc;
+            border-radius: 2rem;
+            color: white;
+            margin-bottom: 2rem;
+        }
+    }
+    & .pc-version {
         & img {
             width: 100%;
             vertical-align: bottom;
         }
     }
-    & .image-source {
-        h3 {
-            font-weight: 700;
+    & .m-version {
+        text-align: center;
+        & img {
+            width: 50%;
+            vertical-align: bottom;
+            @media screen and (max-width: 600px){
+                width: 100%;
+            }
         }
+    }
+    & .image-source {
         & > div {
             text-align: center;
             margin-bottom: 1rem;
             img {
                 width: 50%;
                 vertical-align: bottom;
+                @media screen and (max-width: 600px){
+                    width: 100%;
+                }
             }
+        }
+    }
+    & .link-box {
+        font-size: 0.875rem;
+        margin-top: 1rem;
+        color: #999999;
+        & a {
+            color: #748ffc;
+            margin-left: 5px;
         }
     }
     & .close-btn {
@@ -614,6 +672,9 @@ export const ImageModalContent = styled.div`
         right: 2rem;
         background: white;
         cursor: pointer;
+        @media screen and (max-width: 600px){
+            right: 1rem;
+        }
         & svg {
             font-size: 2rem;
         }

@@ -1,4 +1,4 @@
-import React, { useCallback, useState, useEffect } from 'react';
+import React, { useCallback, useState } from 'react';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 import { ListItem } from './styles';
 
@@ -14,7 +14,7 @@ const Introduce = ({ title, content }) => {
         {title}
         <MdKeyboardArrowDown />
       </h2>
-      <p>{content}</p>
+      <div className="content-box">{content.map((text, index) => <p key={index}>{text}</p>)}</div>
     </ListItem>
   );
 };

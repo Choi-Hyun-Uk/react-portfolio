@@ -13,7 +13,7 @@ const PromotionItem = ({ post }) => {
         <>
             <PromotionItemWrap onClick={onClickImage}>
                 <div className="thumbnail">
-                    <img src={post.image[0].src} alt={post.title} />
+                    <img src={post.pcImage[0].src} alt={post.title} />
                 </div>
                 <p className="title">{post.title}</p>
                 <div className="other">

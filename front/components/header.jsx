@@ -51,12 +51,6 @@ const Header = ({ top }) => {
           <li onClick={onClickContact}>
             Contact<span></span>
           </li>
-          {/* <li>
-            <Link href="https://velog.io/@xka926">
-              <a>Blog</a>
-            </Link>
-            <span></span>
-          </li> */}
         </ul>
       </div>
     </HeaderWrapper>

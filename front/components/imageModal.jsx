@@ -26,22 +26,37 @@ const ImageModal = ({ item, isOpen, onClickImage }) => {
                     <div>
                         <p>{item.created_at}</p>
                         <p>{item.category}</p>
-                        <p>작업 참여도 : 디자인 100%</p>
+                    </div>
+                    <div className="participation">
+                        <span>작업 참여도 :</span>
+                        {item.participation.map((text, index) => <p key={index}>{text}</p>)}
                     </div>
                     <h4>브랜드 : {item.brand}</h4>
+                    {item.url && <div className="link-box">URL : <a href={item.url} target="_blank">링크</a></div>}
                 </div>
-                <div className="image-box">
-                    {item.image.map((item) => (
+                <div className="image-box pc-version">
+                    <h3>PC 버전</h3>
+                    {item.pcImage.map((item) => (
                         <div key={item.id}>
                             <img key={item.id} src={item.src} alt={item.title} />
                         </div>
                     ))}
                 </div>
+                {item.mobileImage.length > 0 && (
+                    <div className="image-box m-version">
+                        <h3>MOBILE 버전</h3>
+                        {item.mobileImage.map((item) => (
+                            <div key={item.id}>
+                                <img key={item.id} src={item.src} alt={item.title} />
+                            </div>
+                        ))}
+                    </div>
+                )}
                 <button className="close-btn" onClick={onClickImage}>
                     <RiCloseFill />
                 </button>
                 {item.source.length > 0 &&
-                    <div className="image-source">
+                    <div className="image-box image-source">
                         <h3>그래픽 소스</h3>
                         {item.source.map((item) => (
                             <div key={item.id}>

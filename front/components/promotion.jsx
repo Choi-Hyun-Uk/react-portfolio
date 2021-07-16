@@ -40,7 +40,8 @@ const promotion = [
       { id: 1, src: 'https://react-blog-s3.s3.ap-northeast-2.amazonaws.com/original/winter-src01.jpg' },
       { id: 2, src: 'https://react-blog-s3.s3.ap-northeast-2.amazonaws.com/original/winter-src02.jpg' },
       { id: 3, src: 'https://react-blog-s3.s3.ap-northeast-2.amazonaws.com/original/winter-src03.jpg' },
-    ]
+    ],
+    snsImage: [],
   },
   {
     id: 3,
@@ -57,6 +58,11 @@ const promotion = [
     ],
     mobileImage: [],
     source: [],
+    snsImage: [
+      { id: 1, src: 'https://react-blog-s3.s3.ap-northeast-2.amazonaws.com/original/awards-sns01.jpeg' },
+      { id: 2, src: 'https://react-blog-s3.s3.ap-northeast-2.amazonaws.com/original/awards-sns02.jpeg' },
+      { id: 3, src: 'https://react-blog-s3.s3.ap-northeast-2.amazonaws.com/original/awards-sns03.jpeg' },
+    ]
   },
   {
     id: 4,
@@ -74,6 +80,7 @@ const promotion = [
     ],
     mobileImage: [],
     source: [],
+    snsImage: [],
   },
   {
     id: 5,
@@ -98,6 +105,7 @@ const promotion = [
       { id: 5, src: 'https://react-blog-s3.s3.ap-northeast-2.amazonaws.com/original/autumn-src05.jpg' },
       { id: 6, src: 'https://react-blog-s3.s3.ap-northeast-2.amazonaws.com/original/autumn-src06.jpg' },
     ],
+    snsImage: [],
   },
   {
     id: 6,
@@ -116,6 +124,7 @@ const promotion = [
     ],
     mobileImage: [],
     source: [],
+    snsImage: [],
   },
   {
     id: 7,
@@ -137,7 +146,8 @@ const promotion = [
       { id: 3, src: 'https://react-blog-s3.s3.ap-northeast-2.amazonaws.com/original/summer-src03.jpg' },
       { id: 4, src: 'https://react-blog-s3.s3.ap-northeast-2.amazonaws.com/original/summer-src04.jpg' },
       { id: 5, src: 'https://react-blog-s3.s3.ap-northeast-2.amazonaws.com/original/summer-src05.jpg' },
-    ]
+    ],
+    snsImage: [],
   },
   {
     id: 8,
@@ -155,6 +165,7 @@ const promotion = [
       { id: 2, src: 'https://react-blog-s3.s3.ap-northeast-2.amazonaws.com/original/appdown-mobile_02.jpg' },
     ],
     source: [],
+    snsImage: [],
     url: 'https://voshop.co.kr/board/board.html?code=vodana_image11&page=1&type=v&board_cate=&num1=999999&num2=00000&number=1&lock=N',
   },
 ];
@@ -178,8 +189,8 @@ const Promotion = ({ promotionRef }) => {
     <>
       <ProjectWrapper ref={promotionRef} className={fadeIn && 'fadeIn'}>
         <div className="inner">
-          <h1>이벤트 프로모션 페이지</h1>
-          <div className="project-list">
+          <h1>이벤트 프로모션</h1>
+          <div className="design-list-box">
             <ul>
               { promotion.map((item) => (
                   <PromotionItem key={item.id} promotion={item} />

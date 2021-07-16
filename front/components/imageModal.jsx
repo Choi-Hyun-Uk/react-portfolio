@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { RiCloseFill } from 'react-icons/ri';
-import { ImageModalWrap, ImageModalContent } from './styles';
+import { ImageModalWrap, ImageModalContent, SnsContentsWrap } from './styles';
+import SnsContentsItem from './snsContentsItem';
 
 const ImageModal = ({ item, isOpen, onClickImage }) => {
     
@@ -67,6 +68,14 @@ const ImageModal = ({ item, isOpen, onClickImage }) => {
                             </div>
                         ))}
                     </div>
+                }
+                {item.snsImage?.length > 0 &&
+                    <div className="image-box sns-image">
+                        <h3>SNS 광고 이미지</h3>
+                        <div>
+                            {item.snsImage.map((item) => <SnsContentsItem key={item.id} item={item}/>)}
+                        </div>
+                    </div >
                 }
             </ImageModalContent>
         </ImageModalWrap>

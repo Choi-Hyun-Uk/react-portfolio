@@ -18,7 +18,7 @@ const PromotionItem = ({ promotion }) => {
                 <p className="title">{promotion.title}</p>
                 <div className="other">
                     <p>{promotion.created_at}</p>
-                    <p>{promotion.category}</p>
+                    <p>{promotion.category[0]}</p>
                 </div>
             </PromotionItemWrap>
             <ImageModal item={promotion} isOpen={isOpen} onClickImage={onClickImage}/>

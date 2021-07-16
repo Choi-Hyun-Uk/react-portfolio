@@ -69,7 +69,7 @@ const ProductDetail = ({ productRef }) => {
             <p>섬네일 이미지 클릭 시 해당 제품 페이지로 이동 됩니다.</p>
           </h1>
           
-          <div className="project-list">
+          <div className="design-list-box">
             <ul>
               { product.map((item) => (
                   <ProductItem key={item.id} product={item} />

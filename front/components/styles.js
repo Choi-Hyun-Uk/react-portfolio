@@ -316,11 +316,10 @@ export const ProjectWrapper = styled.div`
             }
         }
 
-        & ul {
+        & .design-list-box > ul {
             display: flex;
             max-width: calc(1000px + 2rem);
             margin-left: -1rem;
-            flex-direction: row;
             flex-wrap: wrap;
             @media only screen and (max-width: 600px) {
                 width: 100%;
@@ -647,6 +646,22 @@ export const ImageModalContent = styled.div`
             }
         }
     }
+    & .sns-image {
+        & > div {
+            text-align: center;
+            margin-bottom: 1rem;
+            & > div {
+                margin-bottom: 1rem;
+            }
+            img {
+                width: 50%;
+                vertical-align: bottom;
+                @media screen and (max-width: 600px){
+                    width: 100%;
+                }
+            }
+        }
+    }
     & .link-box {
         font-size: 0.875rem;
         margin-top: 1rem;
@@ -674,4 +689,8 @@ export const ImageModalContent = styled.div`
             font-size: 2rem;
         }
     }
+`
+
+export const SnsContentsWrap = styled.div`
+    
 `

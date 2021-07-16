@@ -45,7 +45,7 @@ const Skill = () => {
                   <div className="p-70">70%</div>
                 </div>
               </li>
-              <li>
+              {/* <li>
                 <span>Typescript</span>
                 <div className="percent">
                   <div className="p-60">60%</div>
@@ -56,7 +56,7 @@ const Skill = () => {
                 <div className="percent">
                   <div className="p-70">70%</div>
                 </div>
-              </li>
+              </li> */}
               {/* <li>
                 <span>Next JS</span>
                 <div className="percent">

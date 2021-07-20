@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { RiCloseFill } from 'react-icons/ri';
-import { ImageModalWrap, ImageModalContent, SnsContentsWrap } from './styles';
+import { ImageModalWrap, ImageModalContent } from './styles';
 import SnsContentsItem from './snsContentsItem';
 
 const ImageModal = ({ item, isOpen, onClickImage }) => {
@@ -39,7 +39,11 @@ const ImageModal = ({ item, isOpen, onClickImage }) => {
                     }
                 </div>
                 <div className="image-box pc-version">
-                    <h3>PC 버전</h3>
+                    <h3>상세 내용</h3>
+                    <p>
+                        그래픽 소스는 일러스트로 제작 되었으며, 레이아웃 및 최종 작업물은 포토샵으로 작업 후<br />
+                        실제 쇼핑몰에 퍼블리싱까지 100% 개인 작업으로 진행 되었습니다.
+                    </p>
                     {item.pcImage.map((item) => (
                         <div key={item.id}>
                             <img key={item.id} src={item.src} alt={item.title} />
@@ -48,7 +52,6 @@ const ImageModal = ({ item, isOpen, onClickImage }) => {
                 </div>
                 {item.mobileImage.length > 0 && (
                     <div className="image-box m-version">
-                        <h3>MOBILE 버전</h3>
                         {item.mobileImage.map((item) => (
                             <div key={item.id}>
                                 <img key={item.id} src={item.src} alt={item.title} />

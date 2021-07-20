@@ -8,7 +8,7 @@ const promotion = [
     id: 1,
     title: '2021 설날 이벤트 프로모션 상세페이지',
     brand: 'vodana',
-    category: ['웹 디자인', '웹 퍼블리싱'],
+    category: ['웹 디자인'],
     created_at: '2021-02-01',
     participation: ['디자인 100%', '웹퍼블리싱 100%'],
     pcImage: [
@@ -27,7 +27,7 @@ const promotion = [
     id: 2,
     title: '2020 윈터 세일 이벤트 프로모션 상세페이지',
     brand: 'vodana',
-    category: ['웹 디자인', '웹 퍼블리싱'],
+    category: ['웹 디자인'],
     created_at: '2020-12-14',
     participation: ['디자인 100%', '웹퍼블리싱 100%'],
     pcImage: [
@@ -47,7 +47,7 @@ const promotion = [
     id: 3,
     title: '2020 보다나 어워즈 상세페이지',
     brand: 'vodana',
-    category: ['웹 디자인', '웹 퍼블리싱'],
+    category: ['웹 디자인'],
     created_at: '2020-12-11',
     participation: ['디자인 100%', '웹퍼블리싱 100%'],
     pcImage: [
@@ -68,7 +68,7 @@ const promotion = [
     id: 4,
     title: '보다나 8주년 이벤트 프로모션 상세페이지',
     brand: 'vodana',
-    category: ['웹 디자인', '웹 퍼블리싱'],
+    category: ['웹 디자인'],
     created_at: '2020-11-09',
     participation: ['디자인 100%', '웹퍼블리싱 100%'],
     pcImage: [
@@ -79,14 +79,17 @@ const promotion = [
       { id: 5, src: 'https://react-blog-s3.s3.ap-northeast-2.amazonaws.com/original/8th05.jpg' },
     ],
     mobileImage: [],
-    source: [],
+    source: [
+      { id: 1, src: 'https://react-blog-s3.s3.ap-northeast-2.amazonaws.com/original/8th-src01.jpg' },
+      { id: 2, src: 'https://react-blog-s3.s3.ap-northeast-2.amazonaws.com/original/8th-src02.jpg' },
+    ],
     snsImage: [],
   },
   {
     id: 5,
     title: '가을 세일 이벤트 프로모션 상세페이지',
     brand: 'vodana',
-    category: ['웹 디자인', '웹 퍼블리싱'],
+    category: ['웹 디자인'],
     created_at: '2020-09-24',
     participation: ['디자인 100%', '웹퍼블리싱 100%'],
     pcImage: [
@@ -111,7 +114,7 @@ const promotion = [
     id: 6,
     title: '신제품 기대평 댓글 참여 이벤트 상세페이지',
     brand: 'vodana',
-    category: ['웹 디자인', '웹 퍼블리싱'],
+    category: ['웹 디자인'],
     created_at: '2020-08-24',
     participation: ['디자인 100%', '웹퍼블리싱 100%'],
     pcImage: [
@@ -130,7 +133,7 @@ const promotion = [
     id: 7,
     title: '여름 이벤트 프로모션 상세페이지',
     brand: 'vodana',
-    category: ['웹 디자인', '웹 퍼블리싱'],
+    category: ['웹 디자인'],
     created_at: '2020-07-15',
     participation: ['디자인 100%', '웹퍼블리싱 100%'],
     pcImage: [
@@ -153,7 +156,7 @@ const promotion = [
     id: 8,
     title: '앱 다운로드 혜택 상세페이지',
     brand: 'vodana',
-    category: ['웹 디자인', '웹 퍼블리싱'],
+    category: ['웹 디자인'],
     created_at: '2020-05-04',
     participation: ['디자인 100%', '웹퍼블리싱 100%'],
     pcImage: [

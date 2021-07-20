@@ -607,14 +607,16 @@ export const ImageModalContent = styled.div`
         margin-bottom: 2rem;
         padding-bottom: 2rem;
         border-bottom: 1px solid #cccccc;
-        text-align: center;
         & h3 {
-            display: inline-block;
-            padding: 0.875rem 2rem;
-            background-color: #748ffc;
-            border-radius: 2rem;
-            color: white;
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        & p {
+            font-size: 0.875rem;
             margin-bottom: 2rem;
+            line-height: 1.5;
         }
     }
     & .pc-version {

@@ -39,11 +39,19 @@ const ImageModal = ({ item, isOpen, onClickImage }) => {
                     }
                 </div>
                 <div className="image-box pc-version">
-                    <h3>상세 내용</h3>
-                    <p>
-                        그래픽 소스는 일러스트로 제작 되었으며, 레이아웃 및 최종 작업물은 포토샵으로 작업 후<br />
-                        실제 쇼핑몰에 퍼블리싱까지 100% 개인 작업으로 진행 되었습니다.
-                    </p>
+                    <div className="text-box common-text">
+                        <h3>공통 내용</h3>
+                        <p>
+                            모든 이벤트 기획은 마케팅, 온라인MD 부서에서 기획 되었으며,<br />
+                            그래픽 소스, 상세페이지 디자인 작업 및 웹 퍼블리싱까지 개인 작업으로 진행 되었습니다.
+                        </p>
+                    </div>
+                    <div className="text-box detail-text">
+                        <h3>상세 내용</h3>
+                        {item.concept.map((item, index) => (
+                            <p key={index}>{item}</p>
+                        ))}
+                    </div>
                     {item.pcImage.map((item) => (
                         <div key={item.id}>
                             <img key={item.id} src={item.src} alt={item.title} />

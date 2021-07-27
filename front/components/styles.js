@@ -607,16 +607,17 @@ export const ImageModalContent = styled.div`
         margin-bottom: 2rem;
         padding-bottom: 2rem;
         border-bottom: 1px solid #cccccc;
-        & h3 {
-            font-size: 1.25rem;
-            font-weight: 700;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-        }
-        & p {
-            font-size: 0.875rem;
+        .text-box {
             margin-bottom: 2rem;
-            line-height: 1.5;
+            & h3 {
+                font-weight: 700;
+                margin-top: 2rem;
+                margin-bottom: 1rem;
+            }
+            & p {
+                font-size: 0.875rem;
+                line-height: 1.5;
+            }
         }
     }
     & .pc-version {

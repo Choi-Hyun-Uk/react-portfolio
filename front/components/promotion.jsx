@@ -6,6 +6,7 @@ import PromotionItem from './promotionItem';
 const promotion = [
   {
     id: 1,
+    name: 'promotion',
     title: '2021 설날 이벤트 프로모션 상세페이지',
     brand: 'vodana',
     category: ['웹 디자인'],
@@ -30,6 +31,7 @@ const promotion = [
   },
   {
     id: 2,
+    name: 'promotion',
     title: '2020 윈터 세일 이벤트 프로모션 상세페이지',
     brand: 'vodana',
     category: ['웹 디자인'],
@@ -55,6 +57,7 @@ const promotion = [
   },
   {
     id: 3,
+    name: 'promotion',
     title: '2020 보다나 어워즈 상세페이지',
     brand: 'vodana',
     category: ['웹 디자인'],
@@ -81,6 +84,7 @@ const promotion = [
   },
   {
     id: 4,
+    name: 'promotion',
     title: '보다나 8주년 이벤트 프로모션 상세페이지',
     brand: 'vodana',
     category: ['웹 디자인'],
@@ -107,6 +111,7 @@ const promotion = [
   },
   {
     id: 5,
+    name: 'promotion',
     title: '가을 세일 이벤트 프로모션 상세페이지',
     brand: 'vodana',
     category: ['웹 디자인'],
@@ -136,6 +141,7 @@ const promotion = [
   },
   {
     id: 6,
+    name: 'promotion',
     title: '신제품 기대평 댓글 참여 이벤트 상세페이지',
     brand: 'vodana',
     category: ['웹 디자인'],
@@ -159,6 +165,7 @@ const promotion = [
   },
   {
     id: 7,
+    name: 'promotion',
     title: '여름 이벤트 프로모션 상세페이지',
     brand: 'vodana',
     category: ['웹 디자인'],
@@ -187,6 +194,7 @@ const promotion = [
   },
   {
     id: 8,
+    name: 'promotion',
     title: '앱 다운로드 혜택 상세페이지',
     brand: 'vodana',
     category: ['웹 디자인'],

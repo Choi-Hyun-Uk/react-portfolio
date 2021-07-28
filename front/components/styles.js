@@ -228,8 +228,7 @@ export const SkillWrapper = styled.div`
 
 export const SkillList = styled.ul`
     display: flex;
-    max-width: calc(1000px + 2rem);
-    margin-left: -1rem;
+    max-width: 1000px;
     flex-direction: row;
     flex-wrap: wrap;
     @media only screen and (max-width: 600px) {
@@ -318,8 +317,6 @@ export const ProjectWrapper = styled.div`
 
         & .design-list-box > ul {
             display: flex;
-            max-width: calc(1000px + 2rem);
-            margin-left: -1rem;
             flex-wrap: wrap;
             @media only screen and (max-width: 600px) {
                 width: 100%;
@@ -595,11 +592,6 @@ export const ImageModalContent = styled.div`
                     padding: 0;
                     border: none;
                 }
-                @media screen and (max-width: 600px){
-                    margin-bottom: 0.5rem;
-                    padding: 0;
-                    border: none;
-                }
             }
         }
     }
@@ -620,6 +612,16 @@ export const ImageModalContent = styled.div`
             }
         }
     }
+
+    & .product-image {
+        position: relative;
+        margin: 0 auto;
+        max-width: 860px;
+        & img {
+            width: 100%;
+        }
+    }
+
     & .pc-version {
         & img {
             width: 100%;

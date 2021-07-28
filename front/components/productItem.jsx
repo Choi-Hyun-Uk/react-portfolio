@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useState, useCallback } from 'react';
 import { PromotionItemWrap } from './styles';
+import ImageModal from './imageModal';
 
 const ProductItem = ({ product }) => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const onClickImage = useCallback(() => {
+        setIsOpen((prevState) => !prevState);
+    }, [isOpen]);
+
     return (
         <>
-            <PromotionItemWrap>
+            <PromotionItemWrap onClick={onClickImage}>
                 <div className="thumbnail">
-                    <a href={product.url} target="_blank"><img src={product.thumbnail} alt={product.title} /></a>
+                    <img src={product.thumbnail} alt={product.title} />
                 </div>
                 <p className="title">{product.title}</p>
                 <div className="other">
@@ -15,6 +22,7 @@ const ProductItem = ({ product }) => {
                 </div>
                 <div className="participation"><span>작업 참여도 :</span>{product.participation.map((text, index) => <p key={index}>{text}</p>)}</div>
             </PromotionItemWrap>
+            <ImageModal item={product} isOpen={isOpen} onClickImage={onClickImage}/>
         </>
     )
 }

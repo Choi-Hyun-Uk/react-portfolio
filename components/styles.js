@@ -559,7 +559,6 @@ export const ImageModalContent = styled.div`
         width: 100%;
         padding: 2rem 1rem;
     }
-
     & .head {
         margin-bottom: 2rem;
         & > h3 {

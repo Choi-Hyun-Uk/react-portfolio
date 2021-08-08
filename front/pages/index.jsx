@@ -7,6 +7,7 @@ import Footer from '../components/footer';
 import Main from '../components/main';
 import Promotion from '../components/promotion';
 import ProductDetail from '../components/productDetail';
+import SnsAd from '../components/snsAd';
 
 const Home = () => {
   const elRef = useRef();
@@ -18,6 +19,7 @@ const Home = () => {
       <Skill />
       <Promotion promotionRef={elRef} />
       <ProductDetail productRef={elRef} />
+      <SnsAd snsAdRef={elRef} />
       <Contact />
       <Footer />
     </>

@@ -471,6 +471,7 @@ export const PromotionItemWrap = styled.li`
         margin-bottom: 3rem;
     }
     & .thumbnail {
+        position: relative;
         cursor: pointer;
         height: 280px;
         overflow: hidden;
@@ -522,6 +523,18 @@ export const PromotionItemWrap = styled.li`
                 border-right: none;
             }
         }
+    }
+
+    & .image-legnth {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        background-color: rgba(0,0,0,0.5);
+        color: white;
     }
 `
 
@@ -600,6 +613,7 @@ export const ImageModalContent = styled.div`
         border-bottom: 1px solid #cccccc;
         .text-box {
             margin-bottom: 2rem;
+            text-align: left;
             & h3 {
                 font-weight: 700;
                 margin-top: 2rem;
@@ -695,6 +709,8 @@ export const ImageModalContent = styled.div`
     }
 `
 
-export const SnsContentsWrap = styled.div`
-    
+export const SnsContentsWrap = styled(ProjectWrapper)`
+    & .design-list-box > ul li {
+        width: 33.333333% !important;
+    }
 `

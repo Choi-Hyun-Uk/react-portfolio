@@ -107,7 +107,7 @@ const ProductDetail = ({ productRef }) => {
 
   useEffect(() => {
     const scroll = () => {
-      if (window.scrollY >= productRef.current.offsetTop * 0.8) {
+      if (window.scrollY >= productRef.current.offsetTop * 0.6) {
         setFadeIn(true);
       }
     };

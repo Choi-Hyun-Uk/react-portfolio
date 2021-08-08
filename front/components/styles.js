@@ -336,7 +336,7 @@ export const ProjectWrapper = styled.div`
                     }
                 }
                 @media only screen and (max-width: 600px) {
-                    width: 100%;
+                    width: 100% !important;
                     padding: 0;
                 }
                 & > a {
@@ -711,6 +711,8 @@ export const ImageModalContent = styled.div`
 
 export const SnsContentsWrap = styled(ProjectWrapper)`
     & .design-list-box > ul li {
-        width: 33.333333% !important;
+        @media screen and (min-width: 600px){
+            width: 33.333333% !important;
+        }
     }
 `

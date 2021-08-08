@@ -4,6 +4,7 @@ import { RiCloseFill } from 'react-icons/ri';
 
 import PromotionContents from './promotionContents';
 import ProductContents from './productContents';
+import SnsAdContents from './SnsAdContents';
 
 const ImageModal = ({ item, isOpen, onClickImage }) => {
     
@@ -42,6 +43,7 @@ const ImageModal = ({ item, isOpen, onClickImage }) => {
                 </div>
                 {item.name === 'promotion' && <PromotionContents item={item} />}
                 {item.name === 'product' && <ProductContents item={item} />}
+                {item.name === 'snsad' && <SnsAdContents item={item} />}
                 <button className="close-btn" onClick={onClickImage}>
                     <RiCloseFill />
                 </button>

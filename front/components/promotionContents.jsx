@@ -8,7 +8,7 @@ const PromotionContents = ({ item }) => {
                 <div className="text-box common-text">
                     <h3>공통 내용</h3>
                     <p>
-                        모든 이벤트 기획은 마케팅, 온라인MD 부서에서 기획 되었으며,<br />
+                        이벤트 기획은 마케팅, 온라인MD 부서에서 기획 되었으며,<br />
                         그래픽 소스, 상세페이지 디자인 작업 및 웹 퍼블리싱까지 개인 작업으로 진행 되었습니다.
                     </p>
                 </div>
@@ -37,21 +37,16 @@ const PromotionContents = ({ item }) => {
             )}
             {item.source.length > 0 &&
                 <div className="image-box image-source">
-                    <h3>그래픽 소스</h3>
+                    <div className="text-box">
+                        <h3>그래픽 디자인</h3>
+                        <p>그래픽 소스 디자인은 Adobe Illustrator로 모두 제작 되었습니다.</p>
+                    </div>
                     {item.source.map((item) => (
                         <div key={item.id}>
                             <img key={item.id} src={item.src} alt={item.title} />
                         </div>
                     ))}
                 </div>
-            }
-            {item.snsImage?.length > 0 &&
-                <div className="image-box sns-image">
-                    <h3>SNS 광고 이미지</h3>
-                    <div>
-                        {item.snsImage.map((item) => <SnsContentsItem key={item.id} item={item}/>)}
-                    </div>
-                </div >
             }
         </>
     )
